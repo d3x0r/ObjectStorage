@@ -1,0 +1,17 @@
+{
+  "name": "@d3x0r/ObjectStorage",
+  "version": "1.0.0",
+  "description": "Browser side object storage",
+  "main": "object-storage-remote.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": false,
+  "author": "d3x0r",
+  "license": "ISC",
+  "dependencies": {
+    "@d3x0r/srg": "latest",
+    "jsox": "latest"
+  }
+}
