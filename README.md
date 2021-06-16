@@ -19,7 +19,7 @@ This is a remote storage interface
 
 ``` js
 
-import {ObjectStorage} from "@d3x0r/ObjectStorage"
+import {ObjectStorage} from "@d3x0r/object-storage"
 
 ```
 

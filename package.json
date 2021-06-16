@@ -1,5 +1,5 @@
 {
-  "name": "@d3x0r/ObjectStorage",
+  "name": "@d3x0r/object-storage",
   "version": "1.0.0",
   "description": "Browser side object storage",
   "main": "object-storage-remote.js",
