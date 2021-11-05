@@ -15,8 +15,11 @@ const _debug_stringify = false;
 const _debug_danging = false;
 const _debug_map = false; // reloading related object debugging
 
+
 import {SaltyRNG} from "@d3x0r/srg"
 import {JSOX} from "jsox"
+//import {SaltyRNG} from "../srg/salty_random_generator.js"
+//import {JSOX} from "../../jsox/lib/jsox.mjs"
 
 let util; import( "util" ).then( u=>{ util = u
 	decoder = new u.TextDecoder();
@@ -47,7 +50,7 @@ export function ObjectStorage( ws ) {
 	if( ws ) {
 		ws.storage = this;
 		ws.addEventListener( "open", ()=>{
-			ws.send( { op: "on", id: "?" } );
+			ws.send( { op: "get", id: "?" } );
 		} );
 	}
 	//console.log( "Initialize as object storage?", this );
