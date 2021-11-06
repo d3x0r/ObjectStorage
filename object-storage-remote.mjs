@@ -21,6 +21,7 @@ const _debug_map = false; // reloading related object debugging
 import {SaltyRNG} from "../srg/salty_random_generator.js"
 import {JSOX} from "../../jsox/lib/jsox.mjs"
 
+let decoder = null;
 import( "util" ).then( u=>{ 
 	decoder = new u.TextDecoder();
 } ).catch( ()=>{
