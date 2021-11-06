@@ -16,20 +16,17 @@ const _debug_danging = false;
 const _debug_map = false; // reloading related object debugging
 
 
-import {SaltyRNG} from "@d3x0r/srg"
-import {JSOX} from "jsox"
-//import {SaltyRNG} from "../srg/salty_random_generator.js"
-//import {JSOX} from "../../jsox/lib/jsox.mjs"
+//import {SaltyRNG} from "@d3x0r/srg"
+//import {JSOX} from "jsox"
+import {SaltyRNG} from "../srg/salty_random_generator.js"
+import {JSOX} from "../../jsox/lib/jsox.mjs"
 
-let util; import( "util" ).then( u=>{ util = u
+import( "util" ).then( u=>{ 
 	decoder = new u.TextDecoder();
 } ).catch( ()=>{
-	console.log( "Text Decoder is not available.." );
+	decoder = new TextDecoder();
 } );
 
-//import util from "util";
-//import process from "process";
-//process.stdout.write( "blah?" );
 try {
 	JSOX.updateContext();
 }catch(err) {
