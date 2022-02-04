@@ -15,12 +15,7 @@ const _debug_stringify = false;
 const _debug_danging = false;
 const _debug_map = false; // reloading related object debugging
 
-import {SaltyRNG} from "@d3x0r/srg2"
-import {JSOX} from "jsox"
-
-//import {SaltyRNG} from "@d3x0r/srg"
-//import {JSOX} from "jsox"
-import {SaltyRNG} from "../srg/salty_random_generator.js"
+import {SaltyRNG} from "../srg2/salty_random_generator2.mjs"
 import {JSOX} from "../../jsox/lib/jsox.mjs"
 
 let decoder = null;
