@@ -15,7 +15,7 @@ const _debug_stringify = false;
 const _debug_danging = false;
 const _debug_map = false; // reloading related object debugging
 
-import {SaltyRNG} from "@d3x0r/srg"
+import {SaltyRNG} from "@d3x0r/srg2"
 import {JSOX} from "jsox"
 
 let util; import( "util" ).then( u=>{ util = u
