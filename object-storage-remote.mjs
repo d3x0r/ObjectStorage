@@ -18,15 +18,18 @@ const _debug_map = false; // reloading related object debugging
 import {SaltyRNG} from "@d3x0r/srg2"
 import {JSOX} from "jsox"
 
-let util; import( "util" ).then( u=>{ util = u
+//import {SaltyRNG} from "@d3x0r/srg"
+//import {JSOX} from "jsox"
+import {SaltyRNG} from "../srg/salty_random_generator.js"
+import {JSOX} from "../../jsox/lib/jsox.mjs"
+
+let decoder = null;
+import( "util" ).then( u=>{ 
 	decoder = new u.TextDecoder();
 } ).catch( ()=>{
-	console.log( "Text Decoder is not available.." );
+	decoder = new TextDecoder();
 } );
 
-//import util from "util";
-//import process from "process";
-//process.stdout.write( "blah?" );
 try {
 	JSOX.updateContext();
 }catch(err) {
@@ -47,7 +50,7 @@ export function ObjectStorage( ws ) {
 	if( ws ) {
 		ws.storage = this;
 		ws.addEventListener( "open", ()=>{
-			ws.send( { op: "on", id: "?" } );
+			ws.send( { op: "get", id: "?" } );
 		} );
 	}
 	//console.log( "Initialize as object storage?", this );
