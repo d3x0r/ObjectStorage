@@ -10,7 +10,7 @@
   "private": false,
   "dependencies": {
     "@d3x0r/ObjectStorage": "latest",
-    "@d3x0r/srg": "latest",
+    "@d3x0r/srg2": "latest",
     "jsox": "latest"
   },
   "author": "d3x0r",
