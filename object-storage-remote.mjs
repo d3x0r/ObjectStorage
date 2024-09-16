@@ -26,7 +26,10 @@ import( "util" ).then( u=>{
 } );
 
 try {
-	JSOX.updateContext();
+	// initialie the C layer with some maps from
+	// JS space to C heap.
+	if( "updateContext" in JSOX )
+		JSOX.updateContext();
 }catch(err) {
 	console.log( "Let me guess.... no update?", err );
 }
